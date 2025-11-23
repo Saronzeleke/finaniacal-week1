@@ -9,7 +9,7 @@ from nltk.stem import WordNetLemmatizer
 import nltk
 from typing import List, Dict, Tuple
 import re
-
+from typing import Any
 
 class TextAnalyzer:
     """Class for text analysis and topic modeling"""
@@ -87,7 +87,7 @@ class TextAnalyzer:
         publisher_keywords = {}
         for publisher in df['publisher'].unique():
             publisher_texts = df[df['publisher'] == publisher]['headline_clean'].tolist()
-            if len(publisher_texts) > 10:  # Only analyze publishers with sufficient data
+            if len(publisher_texts) > 10:  
                 keywords = self.extract_keywords(publisher_texts, top_n=15)
                 publisher_keywords[publisher] = keywords
         

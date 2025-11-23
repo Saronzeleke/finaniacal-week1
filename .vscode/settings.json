@@ -1,5 +1,5 @@
 {
-    "python.defaultInterpreterPath": "./venv",
+    "python.defaultInterpreterPath": "./my_venv",
     "python.terminal.activateEnvironment": false,
     "files.exclude": {
         "**/__pycache__": true,
