@@ -109,7 +109,7 @@ Time series analysis shows publication frequency and temporal patterns
 We observed that news publication spikes consistently occur 2-4 hours before major price movements. This gives traders a potential early warning system for volatility.
 
 Topic Modeling Insights
-![Description](reports/images/topic_modeling.png)
+![LDA Topics](reports/images/topic_modeling.png)
 Topic modeling reveals key financial themes in news coverage
 
 python
