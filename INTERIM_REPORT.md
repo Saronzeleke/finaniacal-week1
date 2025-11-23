@@ -87,7 +87,7 @@ Volume and returns analysis plots
 
 Comparative cumulative returns grid (AAPL, MSFT, etc.)
 
-https://reports/images/stock_returns.png
+![Stock Performance](reports/images/stock_returns.png)
 Comparative analysis of cumulative returns across major tech stocks
 
 python
@@ -103,13 +103,13 @@ Initial analysis confirms: News volume (sentiment proxy) enhances technical sign
 
 The "Aha!" Moments
 News-Volume Correlation
-https://reports/images/time_analysis.png
+![Time Analysis](reports/images/time_analysis.png)
 Time series analysis shows publication frequency and temporal patterns
 
 We observed that news publication spikes consistently occur 2-4 hours before major price movements. This gives traders a potential early warning system for volatility.
 
 Topic Modeling Insights
-https://reports/images/topic_modeling.png
+![Description](reports/images/topic_modeling.png)
 Topic modeling reveals key financial themes in news coverage
 
 python
