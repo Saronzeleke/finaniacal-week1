@@ -39,7 +39,7 @@ publisher_impact = analyzer.publisher_analysis()
 📊 Phase 2: Quantitative Analysis
 We integrated TA-Lib to calculate technical indicators and made compelling discoveries:
 
-https://reports/images/stock_returns.png
+![Stock Performance](reports/images/stock_returns.png)
 Comparative analysis of cumulative returns across major tech stocks
 
 RSI Accuracy: Strong success rate in predicting trend reversals
@@ -59,13 +59,13 @@ tech_analyzer = TechnicalAnalyzer()
 data_with_indicators = tech_analyzer.calculate_all_indicators(data)
 The "Aha!" Moments
 News-Volume Correlation
-https://reports/images/time_analysis.png
+![Publication Patterns](reports/images/time_analysis.png)
 Time series analysis shows publication frequency and temporal patterns
 
 We observed that news publication spikes consistently occur before major price movements. This gives traders a potential early warning system.
 
 Topic Modeling Insights
-https://reports/images/topic_modeling.png
+![LDA Topics](reports/images/topic_modeling.png)
 Topic modeling reveals key financial themes in news coverage
 
 python
