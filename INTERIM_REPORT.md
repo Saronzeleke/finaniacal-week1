@@ -59,12 +59,14 @@ tech_analyzer = TechnicalAnalyzer()
 data_with_indicators = tech_analyzer.calculate_all_indicators(data)
 The "Aha!" Moments
 News-Volume Correlation
+
 ![Publication Patterns](reports/images/time_analysis.png)
 Time series analysis shows publication frequency and temporal patterns
 
 We observed that news publication spikes consistently occur before major price movements. This gives traders a potential early warning system.
 
 Topic Modeling Insights
+
 ![LDA Topics](reports/images/topic_modeling.png)
 Topic modeling reveals key financial themes in news coverage
 
