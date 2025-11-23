@@ -108,7 +108,8 @@ class EDAAnalyzer:
         """Analyze publication trends over time"""
         daily_counts = self.df.set_index('date').resample('D').size()
         weekly_counts = self.df.set_index('date').resample('W').size()
-        monthly_counts = self.df.set_index('date').resparse('M').size()
+        monthly_counts = self.df.set_index('date').resample('M').size()
+
         
         time_analysis = {
             'daily': daily_counts,
