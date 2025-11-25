@@ -58,7 +58,7 @@ def create_technical_visualizations(df):
     ax4.legend()
     
     plt.tight_layout()
-    plt.savefig('results/ta_lib_indicators.png', dpi=300, bbox_inches='tight')
+    plt.savefig(r'C:/Users/admin/finaniacal-week1/results/ta_lib_indicators.png', dpi=300, bbox_inches='tight')
     plt.show()
 
 # Demonstrate usage
