@@ -63,7 +63,7 @@ def create_technical_visualizations(df):
 
 # Demonstrate usage
 if __name__ == "__main__":
-    df = pd.read_csv('data/NVDA.csv')
+    df = pd.read_csv(r'C:\Users\admin\finaniacal-week1\data\NVDA.csv')
     df['Date'] = pd.to_datetime(df['Date'])
     df = calculate_technical_indicators(df)
     create_technical_visualizations(df)
