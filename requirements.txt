@@ -14,3 +14,5 @@ yfinance>=0.1.87
 pytest>=7.0.0
 black>=22.0.0
 flake8>=4.0.0
+textblob==0.17.1
+nltk==3.8.1
