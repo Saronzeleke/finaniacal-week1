@@ -44,8 +44,8 @@ finaniacal-week1/
 
 │ ├── /test_eda.py
       /test_financial_analysis.py
-
-│ └── task3/
+      /test_correlation_analysis.py
+│
 
 ├── scripts/ # Utility 
 
@@ -109,7 +109,7 @@ notebooks/eda_analysis.ipynb
 
 src/data_loader.py
 
-tests/task1/test_eda.py
+tests/test_eda.py
 
 **Task 2: Quantitative Analysis**
 
@@ -167,7 +167,7 @@ notebooks/correlation_analysis.ipynb
 
 src/correlation_analysis.py
 
-tests/task3/test_correlation_criteria.py
+tests/test_correlation_analysis.py
 
 # 📈 Key Findings
 
@@ -235,7 +235,7 @@ python -m pytest tests/text_eda.py
 
 python -m pytest tests/test_financial_analysis.py
 
-python -m pytest tests/task3/
+python -m pytest tests/test_correlation_analysis.py
 
 # 📁 Data Sources
 
