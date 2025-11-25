@@ -1,277 +1,305 @@
-# Financial News Analysis and Quantitative Finance Platform
+# Financial News & Stock Analysis Project
 
-## Project Overview
+A comprehensive analysis project exploring the relationship between financial news sentiment and stock price movements.
 
-A comprehensive data science project combining financial news analysis with quantitative technical analysis using 
+## 📋 Project Overview
 
-Python, TA-Lib, and machine learning techniques.
+This project implements a three-task analysis pipeline:
 
-## 📁 Project Structure
+- **Task 1**: Exploratory Data Analysis on financial news headlines
 
-├── .vscode/
+- **Task 2**: Quantitative analysis of stock data with technical indicators  
 
-│ └── settings.json
+- **Task 3**: Correlation analysis between news sentiment and stock returns
 
-├── .github/
+## 🏗️ Project Structure
 
-│ └── workflows/
+finaniacal-week1/
 
-│ └── unittests.yml
+├── data/
+│ 
+│ │ ├── raw_analyst_ratings.csv
 
-├── .gitignore
+│ │ └── NVDA.csv
+│
+├── notebooks/ # Jupyter notebooks for each task
 
-├── requirements.txt
+│ ├── eda.ipynb
 
-├── README.md
+│ ├── quantitative_analysis.ipynb
 
-├── src/
+│ └── correlation_analysis.ipynb
 
-│ ├── init.py
+├── src/ # Source code modules
 
-│ ├── data_loader.py
+│ ├── eda.py
 
-│ ├── text_analyzer.py
+│ ├── technical_analysis.py
 
-│ └── financial_analyzer.py
+│ └── correlation_analysis.py
 
-├── notebooks/
+├── results/ # Analysis results and visualizations
 
-│ ├── eda_analysis.ipynb
+├── tests/ # Unit tests
 
-│ ├── financial_analysis.ipynb
+│ ├── /test_eda.py
+      /test_financial_analysis.py
 
-│ └── images/
+│ └── task3/
 
-├── tests/
+├── scripts/ # Utility 
 
-│ ├── init.py
-
-│ ├── test_eda.py
-
-│ └── test_financial_analysis.py
-
-└── scripts/
-
-├── init.py
-
-└── README.md
-
+└── requirements.txt # Project dependencies
 
 ## 🚀 Installation & Setup
 
 ### Prerequisites
+
 - Python 3.8+
 
 - Git
 
-### 1. Clone Repository
+### Installation Steps
 
-git clone (https://github.com/Saronzeleke/finaniacal-week1.git)
+1. **Clone the repository**
 
-cd finaniacal-week1
+   git clone https://github.com/Saronzeleke/finaniacal-week1.git
 
-# 2. Create Virtual Environment
+   cd finaniacal-week1
 
-python -m venv my_env
+2. **Create virtual environment (recommended)**
 
-source my_env/bin/activate  # Linux/Mac
+    python -m venv venv
 
-# OR
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-my_env\Scripts\activate    # Windows
+3. **Install dependencies**
 
-# 3. Install Dependencies
+   pip install -r requirements.txt
 
-pip install -r requirements.txt
+4. **Download NLTK data (for sentiment analysis)**
 
-# 4. Setup TA-Lib (Required for Technical Analysis)
+   python scripts/setup_nltk.py
 
-Windows:
+# 📊 Task Implementations
 
-#Download TA-Lib wheel from: https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib
+**Task 1: Exploratory Data Analysis (EDA)**
 
-pip install TA_Lib-0.4.24-cp39-cp39-win_amd64.whl
+Status: ✅ COMPLETED
 
-Linux/Mac:
+**Implementation:**
 
-# Install TA-Lib library first
+GitHub repository creation and task-1 branch setup
 
-brew install ta-lib  # Mac
+Frequent, descriptive commit messages
 
-# OR
+Comprehensive EDA covering:
 
-sudo apt-get install ta-lib  # Linux
+Headline length statistics and distribution
 
-pip install TA-Lib
+Publisher analysis and counts
 
-# 📊 Task 1: Exploratory Data Analysis (EDA)
+Publication date trends and time series analysis
 
-# Features Implemented
+Text analysis and topic exploration
 
-Descriptive Statistics: Headline length analysis, publisher activity
+**Files:**
 
-Text Analysis: Topic modeling, keyword extraction using LDA
+notebooks/eda_analysis.ipynb
 
-Time Series Analysis: Publication frequency trends, temporal patterns
+src/data_loader.py
 
-Publisher Analysis: Domain extraction, activity metrics
+tests/task1/test_eda.py
 
-# Run EDA Analysis
+**Task 2: Quantitative Analysis**
+
+Status: ✅ COMPLETED
+
+**Implementation:**
+
+Merged Task 1 branch into main
+
+Created task-2 branch
+
+Loaded and prepared stock price data
+
+Computed technical indicators:
+
+Moving Averages (MA)
+
+Relative Strength Index (RSI)
+
+Moving Average Convergence Divergence (MACD)
+
+Generated clear visualizations showing indicator impact on stock prices
+
+**Files:**
+
+notebooks/financial_analysis.ipynb
+
+src/financial_analysis.py
+
+tests/test_technical_analysis.py
+
+**Task 3: Correlation Analysis**
+
+Status: ✅ COMPLETED
+
+**Implementation:**
+
+Merged Task 2 branch into main
+
+Created task-3 branch
+
+Normalized dates between news and stock data
+
+Performed sentiment analysis on news headlines using TextBlob
+
+Computed daily returns from stock prices
+
+Calculated Pearson correlation coefficient between sentiment and returns
+
+Generated statistical significance testing and visualizations
+
+**Files:**
+
+notebooks/correlation_analysis.ipynb
+
+src/correlation_analysis.py
+
+tests/task3/test_correlation_criteria.py
+
+# 📈 Key Findings
+
+**Task 1 EDA Results**
+
+Analyzed financial news headline patterns and distributions
+
+Identified key publishers and publication trends
+
+Explored temporal patterns in financial news coverage
+
+**Task 2 Technical Analysis**
+
+Successfully computed key technical indicators
+
+Visualized relationships between indicators and price movements
+
+Demonstrated practical application of quantitative analysis
+
+**Task 3 Correlation Analysis**
+
+Pearson Correlation: [Result will be shown after execution]
+
+Statistical Significance: [Result will be shown after execution]
+
+Relationship strength between news sentiment and stock returns
+
+# 🛠️ Usage
+
+Running Individual Tasks
+
+**Task 1: EDA**
+
+python src/data_loader.py
+
+# or
 
 jupyter notebook notebooks/eda_analysis.ipynb
 
-# Key Outputs
+**Task 2: Quantitative Analysis**
 
-Descriptive statistics and visualizations
+python src/financial_analysis.py
 
-Topic modeling results
-
-Publisher activity charts
-
-Time series trends
-
-# 📈 Task 2: Quantitative Financial Analysis
-
-# Features Implemented
-
-Technical Indicators: RSI, MACD, Moving Averages, Bollinger Bands
-
-Financial Metrics: Sharpe ratio, volatility, cumulative returns
-
-Visualization: Comprehensive charting of indicators
-
-Comparative Analysis: Multi-stock performance comparison
-
-# Run Financial Analysis
+# or
 
 jupyter notebook notebooks/financial_analysis.ipynb
 
-# Key Outputs
+**Task 3: Correlation Analysis**
 
-Technical indicator charts
+python src/correlation_analysis.py
 
-Financial metrics reports
+# or
 
-Support/resistance levels
+jupyter notebook notebooks/correlation_analysis.ipynb
 
-Risk-return analysis
+Running Tests
 
-# 🧪 Testing
+# Run all tests
 
-Run the test suite:
+python -m pytest tests/
 
-python -m pytest tests/ -v 
+# Run specific task tests
 
-# 🔄 Git Workflow
+python -m pytest tests/text_eda.py
+
+python -m pytest tests/test_financial_analysis.py
+
+python -m pytest tests/task3/
+
+# 📁 Data Sources
+
+**News Data: Financial news headlines with publication dates and publishers**
+
+**Stock Data: NVDA (NVIDIA Corporation) historical price data**
+
+# 🔧 Dependencies
+
+**Key packages used:**
+
+pandas - Data manipulation and analysis
+
+numpy - Numerical computations
+
+matplotlib & seaborn - Data visualization
+
+textblob - Sentiment analysis
+
+scipy - Statistical analysis
+
+ta-lib - Technical indicators
+
+jupyter - Interactive notebooks
+
+See requirements.txt for complete list.
+
+# 👥 Git & GitHub Practices
 
 Branch Strategy
 
-main: Production-ready code
+main - Production-ready code
 
-task-1: EDA analysis implementation
+task-1 - Exploratory Data Analysis implementation
 
-task-2: Financial analysis implementation
+task-2 - Quantitative Analysis implementation
 
-Commit Convention
+task-3 - Correlation Analysis implementation
 
-feat: New features
+# Commit Standards
 
-fix: Bug fixes
+Frequent, descriptive commit messages
 
-docs: Documentation
+Feature-based commits with clear purposes
 
-test: Test cases
+Proper branch management and pull requests
 
-merge: Branch integrations
+# 📝 License
 
-# 📈 Key Performance Indicators (KPIs)
-
-# Task 1 KPIs
-
-✅ Dev Environment Setup
-
-✅ EDA Analysis Completeness
-
-✅ Text Analysis Accuracy
-
-✅ Repository Organization
-
-# Task 2 KPIs
-
-✅ Technical Indicator Accuracy
-
-✅ Data Analysis Completeness
-
-✅ Self-learning Demonstration
-
-✅ Visualization Quality
-
-# 🛠 Technical Stack
-
-Data Processing: Pandas, NumPy
-
-Visualization: Matplotlib, Seaborn, Plotly
-
-NLP: NLTK, Scikit-learn, Gensim
-
-Technical Analysis: TA-Lib, PyNance
-
-Testing: Pytest
-
-CI/CD: GitHub Actions
-
-# 📝 Usage Examples
-
-Load and Analyze News Data
-
-from src.data_loader import DataLoader
-
-from src.text_analyzer import TextAnalyzer
-
-loader = DataLoader(r'C:\Users\admin\finaniacal-week1\data\raw_analyst_ratings.csv')
-
-df = loader.preprocess_data()
-
-analyzer = EDAAnalyzer(loader)
-
-stats = analyzer.descriptive_statistics()
-
-# Financial Analysis 
-
-from src.financial_analyzer import FinancialDataLoader, TechnicalAnalyzer
-
-loader = FinancialDataLoader()
-
-data = loader.load_stock_data('AAPL')
-
-tech = TechnicalAnalyzer()
-
-data_with_indicators = tech.calculate_all_indicators(data)
+This project is for educational purposes as part of a financial analysis assignment.
 
 # 🤝 Contributing
 
 Fork the repository
 
-Create feature branch (git checkout -b feature/AmazingFeature)
+Create a feature branch (git checkout -b feature/amazing-feature)
 
-Commit changes (git commit -m 'Add amazing feature')
+Commit your changes (git commit -m 'Add amazing feature')
 
-Push to branch (git push origin feature/AmazingFeature)
+Push to the branch (git push origin feature/amazing-feature)
 
-Open Pull Request
+Open a Pull Request
 
-# 📄 License
+📞 Contact
+For questions about this project, please open an issue on GitHub.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-# 👥 Authors
-
-Your Name - Saron Zeleke
-
-# 🙏 Acknowledgments
-
-TA-Lib community for technical analysis functions
-
-Yahoo Finance for financial data
-
-Scikit-learn for machine learning utilities 
+Last Updated: 2025
