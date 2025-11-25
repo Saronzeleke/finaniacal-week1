@@ -16,3 +16,4 @@ black>=22.0.0
 flake8>=4.0.0
 textblob==0.17.1
 nltk==3.8.1
+TA-Lib==0.4.24

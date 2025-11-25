@@ -195,6 +195,22 @@ Statistical Significance: [Result will be shown after execution]
 
 Relationship strength between news sentiment and stock returns
 
+## TA-Lib Implementation Evidence
+
+**Technical indicators calculated using TA-Lib:**
+
+- Simple Moving Averages (20, 50-day)
+
+- RSI (14-day period)
+
+- MACD (12, 26, 9)
+
+- Bollinger Bands
+
+- Stochastic Oscillator
+
+See `src/technical_analysis_ta.py` for complete implementation.
+
 # 🛠️ Usage
 
 Running Individual Tasks
